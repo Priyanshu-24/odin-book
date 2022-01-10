@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Odin-Book</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%- include("header")%>
+
+    <div class="content">
+      <% posts.forEach(post => { %> <%- include("saved_post", {post: post}) %> <%
+       }) %>
+     </div>
+
+  </body>
+</html>

@@ -1,0 +1,181 @@
+body{
+  margin: 0;
+  background-color: rgb(236, 233, 233);
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5%;
+  background-color: rgb(83, 123, 255);
+}
+
+.header a{
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.post{
+  margin-top: 40px;
+  border: 1px solid black;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  background-color: white;
+  border: none;
+  padding: 5px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.post_un{
+  margin-top: 5px;
+  font-size: large;
+}
+
+.post_date{
+  font-size: small;
+  font-style: italic;
+}
+
+.post_body{
+  font-size: x-large;
+  margin-top: 8px;
+}
+
+.post input{
+  outline: none;
+  margin: 15px 0;
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(236, 233, 233);
+  padding: 5px;
+}
+
+.cmt_sub{
+  border: none;
+  background-color: rgb(236, 233, 233);
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.cmt_sub:hover{
+  cursor: pointer;
+}
+
+.cmt_head{
+  font-size: larger;
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
+.single-comment{
+  margin-bottom: 5px;
+}
+
+.post_dlt{
+  margin: 5px;
+  border: none;
+  background-color: rgb(252, 94, 94);
+  padding: 5px;
+  border-radius: 12px;
+}
+
+.post_dlt:hover{
+  cursor: pointer;
+}
+
+.post_save{
+  margin: 5px;
+  border: none;
+  background-color: rgb(71, 71, 255);
+  padding: 5px;
+  border-radius: 12px;
+}
+
+.post_save:hover{
+  cursor: pointer;
+}
+
+.cmt_head_m{
+  font-size: larger;
+  margin-bottom: 5px;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile_name{
+  font-weight: bold;
+  font-size: xx-large;
+  margin-top: 10px;
+}
+
+.profile_un{
+  font-size: larger;
+}
+
+.profile_head{
+  margin-top: 30px;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.auth{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth input{
+  border: none;
+  height: 30px;
+  width: 500px;
+  border-radius: 12px;
+  outline: none;
+}
+
+.auth_form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth_btn{
+  border: none;
+  background-color: rgb(83, 123, 255);
+  padding: 5px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+}
+
+.auth_btn:hover{
+  cursor: pointer;
+  background-color: rgb(49, 95, 247);
+}
+
+textarea{
+  width: 500px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  padding: 10px;
+}

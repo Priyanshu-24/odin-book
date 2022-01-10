@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>My Blog</title>
+  </head>
+  <body>
+    <%- include("header")%>
+
+    <div class="auth">
+      <h1>Log In</h1>
+
+      <form action="" method="POST" class="auth_form">
+        <div>
+          <br />
+          <br />
+
+          <input
+            name="username"
+            type="text"
+            required
+            minlength="3"
+            placeholder="Username"
+          />
+        </div>
+
+        <div>
+          <br />
+          <br />
+
+          <input
+            name="password"
+            type="password"
+            minlength="6"
+            required
+            placeholder="Password"
+          />
+        </div>
+        <br />
+
+        <button class="auth_btn">LogIn</button>
+
+        <% if (msg){ %>
+        <div><%= msg %></div>
+        <%}%>
+      </form>
+    </div>
+  </body>
+</html>

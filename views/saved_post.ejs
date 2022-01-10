@@ -1,0 +1,29 @@
+<% if (user.username === post.username){ %>
+<div class="post">
+    <div class="post_un"><strong><%= post.username %></strong></div>
+    <div class="post_date"><%= post.timestamp %></div>
+    <div class="post_body"><%= post.caption %></div> 
+  
+    <% if (post.comment.length !== 0){ %>
+    <div class="cmt_head">Comments: </div>
+    <%}%> 
+  
+    <% post.comment.forEach((c)=>{ %>
+      <div class="single-comment">
+        <spam><strong><%= c.username %></strong></spam>
+        <spam><%= c.comments %></spam>
+      </div>
+      <% }) %>
+  
+      <% if (user){ %>
+      <form action="/delete_save_post/<%= post.id %>" method="POST">
+         <button class="post_save">Unsave</button>
+      </form>
+      <%}%> 
+  
+      
+  
+  </div>
+  <%}%>
+
+  

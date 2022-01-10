@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Odin-Book</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%- include("header")%>
+
+    <div class="profile">
+        <div class="profile_name"><%= user.first_name %> <%= user.last_name %></div>
+        <div class="profile_un">@<%= user.username %></div>
+        <div class="profile_head">My Posts:</div>
+      </div>
+    <div class="content">
+      <% posts.forEach(post => { %> <%- include("my_post", {post: post}) %> <%
+       }) %>
+     </div>
+
+  </body>
+</html>

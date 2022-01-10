@@ -46,12 +46,12 @@ exports.save_post = async (req, res, next) => {
   const { id } = req.params;
   const post = await Post.findById(id);
 
-  const { caption, username, timestamp, comment } = post;
+  const { caption, timestamp, comment } = post;
 
   const response = await Bookmark.create({
     caption,
     timestamp,
-    username,
+    username: req.user.username,
     comment
   });
 
